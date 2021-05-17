@@ -152,6 +152,7 @@ nav a:hover {
 .poke {
   width: 90%;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .poke h1,
@@ -166,12 +167,14 @@ nav a:hover {
 
 .pokemon-wrapper {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 40px;
+  /* justify-content: space-between; */
 }
 
 .pokemon-wrapper .item {
-  width: 30%;
+  /* width: 30%; */
 }
 
 .content {
