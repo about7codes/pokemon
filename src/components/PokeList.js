@@ -18,6 +18,11 @@ const PokeList = (props) => {
     }, []);
     
     const fetchData = (page=1) => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        
         dispatch(getPokeList(page));
     }
 
