@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
+import Footer from './components/Footer';
 import PokeList from './components/PokeList';
 import Pokemon from './components/Pokemon';
 
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path='/pokemon/:pokeName' exact component={Pokemon} />
                 <Redirect to='/' />
             </Switch>
+            <Footer />
         </div>
     )
 }
