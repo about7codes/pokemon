@@ -17,10 +17,11 @@ p {
   padding: 0;
 }
 
-/* .App {
+.App {
+  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-} */
+}
 
 nav {
   display: flex;
@@ -156,9 +157,9 @@ nav a:hover {
 
 .poke {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 50px;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 .poke h1,
